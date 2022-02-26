@@ -29,3 +29,9 @@
 
     - shell: uptime
       register: results
+
+    - debug:
+        var: results
+
+    - debug:
+        var: results.stdout
