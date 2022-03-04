@@ -1,0 +1,20 @@
+---
+
+- name: Ansible Lesson 19
+  hosts: all
+  any_errors_fatal: false
+  become: yes
+
+ tasks:
+
+   - name: Task Number 1
+     yum: name=treeeeeee state=latest
+     ignore_errors: yes
+
+   - name: Task Number 2
+     shell: echo HelloWorld!
+
+   - name: Task Number 3
+     shell: echo Privet Mir!!!
+
+...
